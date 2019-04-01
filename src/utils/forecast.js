@@ -13,7 +13,7 @@ const request = require('request')
 // })
 
 const forecast = (latitude, longitude, callback) => {
-    const url ='https://api.darksky.net/forecast/c74c1085168b5c8c56a94af3fcc6f244/'+ encodeURIComponent(latitude) + ',' + encodeURIComponent(longitude) + '?units=si&lang=ro'
+    const url ='https://api.darksky.net/forecast/c74c1085168b5c8c56a94af3fcc6f244/'+ encodeURIComponent(latitude) + ',' + encodeURIComponent(longitude) + '?units=si'
 
     request({url, json: true}, (error, {body}) => {
         if(error) {

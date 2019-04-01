@@ -21,7 +21,7 @@ weatherForm.addEventListener('submit', (e) => {
         } else {             
             messageOne.textContent = location
             messageTwo.textContent = forecast.summary
-            messageThree.textContent = 'Temperatura curentă este de ' + forecast.temperature +' grade Celsius.'
+            messageThree.textContent = 'The current temperature in ' + location + ' is ' + forecast.temperature +' Celsius degrees.'
         }        
     })
 })
